@@ -9837,11 +9837,11 @@ h1, h2, h3, h4, h5,
 }
 
 .hero-wrap .forth {
-  width: 20%;
+  width: 30%;
   height: 750px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .hero-wrap .forth {
     width: 0%;
   }
@@ -9856,13 +9856,11 @@ h1, h2, h3, h4, h5,
 @media (min-width: 992px) {
   .hero-wrap .forth .bg-after:after {
     position: absolute;
-    top: -100%;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
     content: '';
-    background: #000000;
   }
 }
 
@@ -9883,6 +9881,13 @@ h1, h2, h3, h4, h5,
 @media (min-width: 768px) {
   .hero-wrap .forth .text {
     padding-left: 3em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-wrap .forth .text {
+    top: 60%;
+    left: 10%;
   }
 }
 
@@ -9977,14 +9982,14 @@ h1, h2, h3, h4, h5,
 }
 
 .hero-wrap .third {
-  width: 80%;
+  width: 70%;
   position: relative;
   height: 750px;
 }
 
 @media (max-width: 767.98px) {
   .hero-wrap .third {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -10054,6 +10059,16 @@ h1, h2, h3, h4, h5,
 
 .video-hero {
   height: 750px;
+  background-image: url(../images/nuxx-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 991.98px) {
+  .video-hero {
+    background-position: top right;
+  }
 }
 
 .owl-carousel {
