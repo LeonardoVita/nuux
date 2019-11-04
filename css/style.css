@@ -9866,7 +9866,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap .forth .text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   width: 100%;
@@ -9956,14 +9956,12 @@ h1, h2, h3, h4, h5,
   color: #fff;
   z-index: 0;
   letter-spacing: 1px;
-  font-size: calc(1vw + 10px);
-  font-weight: 600;
 }
 
 .hero-wrap .forth .text .btn-custom:after {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -60px;
   bottom: 0;
   content: '';
   width: 100%;
@@ -9971,8 +9969,20 @@ h1, h2, h3, h4, h5,
   z-index: -1;
 }
 
+.hero-wrap .forth .text .btn-custom:before {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 30px;
+  height: 2px;
+  content: '';
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .hero-wrap .third {
-  width: 70%;
+  width: 55%;
   position: relative;
   height: 750px;
 }

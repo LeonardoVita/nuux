@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5,
 		}
 		.text{
 			position: absolute;
-			top: 50%;
+			top: 40%;
 			left: 0;
 			right: 0;
 			// max-width: 1140px;
@@ -496,24 +496,31 @@ h1, h2, h3, h4, h5,
 				color: $white;
 				z-index: 0;
 				letter-spacing: 1px;
-				font-size: calc(1vw + 10px);
-				font-weight: 600;				
 				&:after{
 					position: absolute;
 					top: 0;
-					right: 0;
+					right: -60px;
 					bottom: 0;
 					content: '';
 					width: 100%;
 					background: darken($primary,4%);
 					z-index: -1;
 				}
-				
+				&:before{
+					position: absolute;
+					top: 50%;
+					right: -30px;
+					width: 30px;
+					height: 2px;
+					content: '';
+					transform: translateY(-50%);
+					background: rgba(255,255,255,.8);
+				}
 			}
 		}
 	}
 	.third{
-		width: 70%;
+		width: 55%;
 		position: relative;
 		height: 750px;
 		@include media-breakpoint-down(sm){
