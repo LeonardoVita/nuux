@@ -1262,17 +1262,12 @@ textarea.form-control {
 }
 
 
-.about-author{
-	img{
-	}
+.about-author{	
 	.desc{
 		h3{
 			font-size: 24px;
 		}
-	}
-	.bio{
-
-	}
+	}	
 }
 
 
@@ -1621,6 +1616,7 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1663,11 +1659,7 @@ textarea.form-control {
 	background-position: top center;
 	@include media-breakpoint-down(lg){
 		background-position: center center !important;
-	}
-	.icon{
-		span{
-		}
-	}
+	}	
 	.text{
 		strong.number{
 			font-weight: 500;
@@ -1755,9 +1747,7 @@ textarea.form-control {
 		outline: none!important;
 		box-shadow: none!important;
 		font-size: 15px;
-	}
-	#map {
-	}
+	}	
 }
 
 
